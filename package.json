@@ -13,22 +13,17 @@
     "type-check:watch": "tsc --watch"
   },
   "dependencies": {
-    "@aws-sdk/credential-providers": "^3.474.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
-    "@mongodb-js/zstd": "^1.2.0",
     "@tailwindcss/forms": "^0.5.6",
     "@typegoose/typegoose": "^11.3.0",
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "autoprefixer": "10.4.14",
-    "aws4": "^1.12.0",
     "axios": "^1.6.0",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
-    "kerberos": "^2.1.0",
-    "mongodb-client-encryption": "^6.0.0",
     "mongoose": "^7.3.3",
     "next": "13.4.9",
     "postcss": "8.4.25",
@@ -36,8 +31,15 @@
     "react-dom": "18.2.0",
     "react-dropzone": "^14.2.3",
     "react-icons": "^4.11.0",
-    "snappy": "^7.2.2",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.6"
+  },
+  "optionalDependencies": {
+    "@aws-sdk/credential-providers": "^3.474.0",
+    "@mongodb-js/zstd": "^1.2.0",
+    "aws4": "^1.12.0",
+    "kerberos": "^2.1.0",
+    "mongodb-client-encryption": "^2.9.1",
+    "snappy": "^7.2.2"
   }
 }
