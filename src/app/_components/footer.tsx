@@ -14,7 +14,7 @@ export const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between">
         <p className="md:w-1/2 text-gray-300 ml-6 font-semibold">
           If you have any project ideas, I&apos;d be delighted to discuss them.
-          If you're in or around Berea, let's plan a coffee chat. For those
+          If you're in or around Berea, let&apos;s plan a coffee chat. For those
           living farther away, we can always have a virtual discussion
         </p>
         <div className="flex space-x-5 items-center justify-center text-tertiary">
