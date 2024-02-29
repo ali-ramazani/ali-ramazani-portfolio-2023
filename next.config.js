@@ -10,12 +10,20 @@ const nextConfig = {
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {
-      config.externals.push(
-        "@mongodb-js/zstd",
-        "snappy",
-        "mongodb-client-encryption"
-      );
+      // Exclude .node files from client-side bundle
+      config.module.rules.push({
+        test: /\.node$/,
+        loader: "ignore-loader",
+      });
     }
+
+    // Keep your existing externals configuration
+    config.externals.push(
+      "@mongodb-js/zstd",
+      "snappy",
+      "mongodb-client-encryption"
+    );
+
     return config;
   },
 };
