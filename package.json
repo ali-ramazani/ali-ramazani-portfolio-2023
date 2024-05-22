@@ -43,6 +43,7 @@
     "snappy": "^7.2.2"
   },
   "devDependencies": {
-    "ignore-loader": "^0.1.2"
+    "ignore-loader": "^0.1.2",
+    "node-loader": "^2.0.0"
   }
 }
