@@ -35,6 +35,7 @@ async function connectDB() {
       bufferCommands: false,
     };
 
+    console.log(`----${NEXT_PUBLIC_MONGODB_URI}---`);
     cached.promise = connect(NEXT_PUBLIC_MONGODB_URI!, opts)
       .then((mongoose) => {
         console.log("✅ New connection established");
@@ -42,6 +43,7 @@ async function connectDB() {
       })
       .catch((error) => {
         console.error("❌ Connection to database failed");
+        // console.log(error);
         throw error;
       });
   }
